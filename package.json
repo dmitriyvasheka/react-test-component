@@ -1,6 +1,6 @@
 {
   "name": "react-very-test-component-1234",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "react test component",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
