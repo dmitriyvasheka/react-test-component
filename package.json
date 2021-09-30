@@ -1,0 +1,28 @@
+{
+  "name": "react-test-component",
+  "version": "0.0.1",
+  "description": "react test component",
+  "main": "index.tsx",
+  "scripts": {
+    "test": "test",
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitriyvasheka/react-test-component.git"
+  },
+  "keywords": [
+    "test",
+    "react",
+    "lol"
+  ],
+  "author": "Dmitry Vasheka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitriyvasheka/react-test-component/issues"
+  },
+  "homepage": "https://github.com/dmitriyvasheka/react-test-component#readme"
+}
