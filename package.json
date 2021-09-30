@@ -1,5 +1,5 @@
 {
-  "name": "react-test-component",
+  "name": "react-very-test-component-1234",
   "version": "0.0.1",
   "description": "react test component",
   "main": "index.tsx",
@@ -24,5 +24,18 @@
   "bugs": {
     "url": "https://github.com/dmitriyvasheka/react-test-component/issues"
   },
-  "homepage": "https://github.com/dmitriyvasheka/react-test-component#readme"
+  "homepage": "https://github.com/dmitriyvasheka/react-test-component#readme",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.12.3",
+    "np": "^7.5.0",
+    "react": "^17.0.2",
+    "release-it": "^14.11.6"
+  },
+  "files": [
+    "/lib",
+    "/src"
+  ]
 }
