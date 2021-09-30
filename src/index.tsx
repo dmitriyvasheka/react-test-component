@@ -1,5 +1,5 @@
 import React, { FC } from "react"
-import { Box, Button } from "@material-ui/core"
+import { Box, Button, useTheme } from "@material-ui/core"
 import { makeStyles } from "@material-ui/core/styles"
 
 /*export const useStyles = makeStyles((theme) => ({
@@ -10,11 +10,11 @@ import { makeStyles } from "@material-ui/core/styles"
   },
 }))*/
 
-const useStyles = makeStyles({
-    test: (props: { backgroundColor: string }) => ({
-        backgroundColor: props.backgroundColor,
+const useStyles = makeStyles((theme) => ({
+    test: () => ({
+        backgroundColor: theme.palette.secondary.main,
     }),
-})
+}))
 
 export interface NotificationsListProps {
     styles: any
@@ -22,6 +22,7 @@ export interface NotificationsListProps {
 
 export const NotificationsList: FC<NotificationsListProps> = ({ styles }) => {
     const classes = useStyles(styles)
+    const theme = useTheme()
     /*useEffect(() => {
       if (socket) {
         //
@@ -35,6 +36,7 @@ export const NotificationsList: FC<NotificationsListProps> = ({ styles }) => {
             position="relative"
             paddingX={2}
         >
+            theme: {theme.palette.secondary.main}
             <Button className={classes.test}>Vvvv</Button>
         </Box>
     )
